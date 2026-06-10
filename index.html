@@ -36,11 +36,21 @@
 
     }
 
-    header img {
+    .logo img {
 
       height: 80px;
 
       width: auto;
+
+    }
+
+    .logo a {
+
+      display: flex;
+
+      align-items: center;
+
+      text-decoration: none;
 
     }
 
@@ -53,6 +63,26 @@
       color: #0C4491;
 
       letter-spacing: 0.5px;
+
+      text-align: center;
+
+      flex: 1;
+
+    }
+
+    .flag img {
+
+      height: 100px;
+
+      width: auto;
+
+      border: 2px solid #EBAF24;
+
+      padding: 2px;
+
+      background: #ffffff;
+
+      border-radius: 4px;
 
     }
 
@@ -152,9 +182,27 @@
 
 <header>
 
-  <img src="coat-of-arms.png" alt="Coat of Arms">
+  <div class="logo">
 
-  <div class="title">Republic of Southcliff</div>
+    <a href="index.html">
+
+      <img src="coat-of-arms.png" alt="Coat of Arms">
+
+    </a>
+
+  </div>
+
+  <div class="title">
+
+    Republic of Southcliff
+
+  </div>
+
+  <div class="flag">
+
+    <img src="flag.png" alt="Flag of Southcliff">
+
+  </div>
 
 </header>
 
