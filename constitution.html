@@ -24,21 +24,43 @@
 
     header {
 
-      padding: 14px 20px;
-
-      border-bottom: 4px solid #0C4491;
-
       display: flex;
-
-      justify-content: space-between;
 
       align-items: center;
 
+      justify-content: space-between;
+
+      padding: 16px 22px;
+
+      border-bottom: 4px solid #0C4491;
+
     }
 
-    header span {
+    /* Left logo (clickable) */
 
-      font-size: 34px;
+    header .logo img {
+
+      height: 80px;
+
+      width: auto;
+
+    }
+
+    header .logo a {
+
+      display: flex;
+
+      align-items: center;
+
+      text-decoration: none;
+
+    }
+
+    /* Title (same as homepage) */
+
+    header .title {
+
+      font-size: 28px;
 
       font-weight: bold;
 
@@ -48,13 +70,13 @@
 
     }
 
-    header img {
+    /* Right flag */
 
-      height: 100px !important;
+    header .flag img {
 
-      max-height: none !important;
+      height: 100px;
 
-      width: auto !important;
+      width: auto;
 
       border: 2px solid #EBAF24;
 
@@ -134,9 +156,29 @@
 
 <header>
 
-  <span>Republic of Southcliff</span>
+  <!-- Coat of arms (top left, clickable) -->
 
-  <img src="flag.png" alt="Flag of Southcliff">
+  <div class="logo">
+
+    <a href="index.html">
+
+      <img src="coat-of-arms.png" alt="Coat of Arms">
+
+    </a>
+
+  </div>
+
+  <!-- Title -->
+
+  <div class="title">Republic of Southcliff</div>
+
+  <!-- Flag (top right) -->
+
+  <div class="flag">
+
+    <img src="flag.png" alt="Flag of Southcliff">
+
+  </div>
 
 </header>
 
