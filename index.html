@@ -18,7 +18,7 @@
 
       color: #0b0c0c;
 
-      line-height: 1.5;
+      line-height: 1.6;
 
     }
 
@@ -28,7 +28,9 @@
 
       align-items: center;
 
-      padding: 14px 20px;
+      justify-content: space-between;
+
+      padding: 16px 22px;
 
       border-bottom: 4px solid #0C4491;
 
@@ -36,23 +38,27 @@
 
     header img {
 
-      height: 40px;
+      height: 80px;
 
-      margin-right: 12px;
+      width: auto;
 
     }
 
-    header strong {
+    .title {
 
-      font-size: 18px;
+      font-size: 28px;
+
+      font-weight: bold;
 
       color: #0C4491;
+
+      letter-spacing: 0.5px;
 
     }
 
     nav {
 
-      padding: 10px 20px;
+      padding: 12px 22px;
 
       border-bottom: 1px solid #e0e0e0;
 
@@ -65,6 +71,8 @@
       color: #0C4491;
 
       text-decoration: none;
+
+      font-weight: 600;
 
     }
 
@@ -88,8 +96,6 @@
 
       color: #0C4491;
 
-      font-size: 32px;
-
     }
 
     .panel {
@@ -104,6 +110,24 @@
 
     }
 
+    .panel a {
+
+      color: #0C4491;
+
+      font-weight: bold;
+
+      text-decoration: none;
+
+    }
+
+    .panel a:hover {
+
+      color: #EBAF24;
+
+      text-decoration: underline;
+
+    }
+
     footer {
 
       margin-top: 60px;
@@ -114,9 +138,9 @@
 
       text-align: center;
 
-      color: #0C4491;
+      font-size: 13px;
 
-      font-size: 14px;
+      color: #0C4491;
 
     }
 
@@ -130,51 +154,51 @@
 
   <img src="coat-of-arms.png" alt="Coat of Arms">
 
-  <strong>Republic of Southcliff</strong>
+  <div class="title">Republic of Southcliff</div>
 
 </header>
 
 <nav>
 
-  <a href="#">Government</a>
-
-  <a href="#">Constitution</a>
+  <a href="constitution.html">Constitution</a>
 
   <a href="#">Citizenship</a>
 
-  <a href="#">News</a>
+  <a href="#">Announcements</a>
 
 </nav>
 
 <main>
 
-  <h1>Welcome to Southcliff</h1>
+<h1>Welcome to Southcliff</h1>
 
-  <p>Official digital presence of the Republic of Southcliff.</p>
+<div class="panel">
 
-  <div class="panel">
+  <p>
 
-    <strong>Government services</strong>
+    <a href="constitution.html">Read the Constitution</a><br>
 
-    <ul>
+    Official legal framework of the Republic of Southcliff
 
-<li><a href="constitution.html">Read the Constitution</a><br><small>Official legal framework of Southcliff</small></li>
+  </p>
 
-<li><a href="#">Apply for Citizenship</a><br><small>Submit an application to become a citizen</small></li>
+  <p>
 
-<li><a href="#">View official announcements</a><br><small>Government notices and updates</small></li>
+    <a href="#">Apply for Citizenship</a><br>
 
-    </ul>
+    Submit an application to become a citizen
 
-  </div>
+  </p>
 
-  <div class="panel">
+  <p>
 
-    <strong>Latest update</strong>
+    <a href="#">View official announcements</a><br>
 
-    <p>No announcements currently published.</p>
+    Government notices and updates
 
-  </div>
+  </p>
+
+</div>
 
 </main>
 
