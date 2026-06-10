@@ -132,10 +132,6 @@
 
   <input type="text" id="title">
 
-  <label>Date</label>
-
-  <input type="date" id="date">
-
   <label>Announcement Body</label>
 
   <textarea id="body"></textarea>
@@ -144,7 +140,7 @@
 
   <div class="note">
 
-    This posts directly to the Southcliff Firebase database.
+    Date is automatically generated. Posts go live instantly.
 
   </div>
 
@@ -166,15 +162,21 @@
 
   const db = firebase.database();
 
+  function getTodayDate() {
+
+    return new Date().toISOString().split("T")[0];
+
+  }
+
   function postAnnouncement() {
 
     const title = document.getElementById("title").value;
 
-    const date = document.getElementById("date").value;
-
     const body = document.getElementById("body").value;
 
-    if (!title || !date || !body) {
+    const date = getTodayDate();
+
+    if (!title || !body) {
 
       alert("Fill in all fields.");
 
@@ -188,17 +190,15 @@
 
       title: title,
 
-      date: date,
+      body: body,
 
-      body: body
+      date: date
 
     });
 
     alert("Announcement posted.");
 
     document.getElementById("title").value = "";
-
-    document.getElementById("date").value = "";
 
     document.getElementById("body").value = "";
 
