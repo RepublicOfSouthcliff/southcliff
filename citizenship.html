@@ -1,146 +1,285 @@
 <!DOCTYPE html>
+
 <html>
+
 <head>
+
   <title>Citizenship Application - Republic of Southcliff</title>
+
   <style>
+
     body {
+
       margin: 0;
+
       font-family: Arial, sans-serif;
+
       background: #ffffff;
+
       color: #0b0c0c;
+
       line-height: 1.6;
+
     }
+
     header {
+
       display: flex;
+
       align-items: center;
+
       justify-content: space-between;
+
       padding: 16px 22px;
+
       border-bottom: 4px solid #0C4491;
+
     }
+
     .logo img {
+
       height: 80px;
+
       width: auto;
+
     }
+
     .title {
+
       font-size: 28px;
+
       font-weight: bold;
+
       color: #0C4491;
+
+      text-align: center;
+
       flex: 1;
-      text-align: center;
+
     }
+
     .flag img {
+
       height: 100px;
+
       width: auto;
+
       border: 2px solid #EBAF24;
+
       padding: 2px;
+
       border-radius: 4px;
+
+      background: #fff;
+
     }
+
     main {
+
       max-width: 800px;
+
       margin: 40px auto;
+
       padding: 0 20px;
+
     }
+
     h1 {
+
       color: #0C4491;
+
     }
+
     label {
+
       display: block;
+
       margin-top: 15px;
+
       font-weight: bold;
+
     }
-    input,
-    textarea {
+
+    input, textarea {
+
       width: 100%;
+
       padding: 10px;
+
       margin-top: 5px;
-      border: 1px solid #cccccc;
+
+      border: 1px solid #ccc;
+
       border-radius: 4px;
+
       box-sizing: border-box;
+
     }
+
     textarea {
+
       height: 120px;
+
+      resize: vertical;
+
     }
-    .checkbox {
-      margin-top: 15px;
-    }
+
     button {
+
       margin-top: 20px;
+
       padding: 12px 24px;
+
       background: #0C4491;
+
       color: white;
+
       border: none;
+
       border-radius: 4px;
+
       cursor: pointer;
+
       font-size: 16px;
+
     }
+
     button:hover {
+
       background: #08326d;
+
     }
+
     .privacy {
+
       margin-top: 30px;
+
       padding: 15px;
+
       background: #f3f2f1;
+
       border-left: 4px solid #EBAF24;
+
+      font-size: 14px;
+
     }
+
     footer {
+
       margin-top: 60px;
+
       padding: 20px;
+
       border-top: 1px solid #e0e0e0;
+
       text-align: center;
+
       font-size: 13px;
+
       color: #0C4491;
+
     }
+
   </style>
+
 </head>
+
 <body>
+
 <header>
+
   <div class="logo">
+
     <a href="index.html">
+
       <img src="coat-of-arms.png" alt="Coat of Arms">
+
     </a>
+
   </div>
-  <div class="title">
-    Republic of Southcliff
-  </div>
+
+  <div class="title">Republic of Southcliff</div>
+
   <div class="flag">
+
     <img src="flag.png" alt="Flag of Southcliff">
+
   </div>
+
 </header>
+
 <main>
-<h1>Republic of Southcliff Citizenship Application</h1>
-<p>
-Complete the form below to apply for citizenship of the Republic of Southcliff.
-</p>
+
+<h1>Citizenship Application</h1>
+
+<p>Complete the form below to apply for citizenship of the Republic of Southcliff.</p>
+
 <form action="https://formspree.io/f/xvznbzky" method="POST">
 
-Full Name
-Date of Birth
-Email Address
-Phone Number
-Discord Username
-Country of Residence
-Why do you wish to become a citizen of Southcliff?
+  <label>Full Name</label>
+
+  <input type="text" name="Full Name" required>
+
+  <label>Date of Birth</label>
+
+  <input type="date" name="Date of Birth" required>
+
+  <label>Email Address</label>
+
+  <input type="email" name="Email Address" required>
+
+  <label>Phone Number</label>
+
+  <input type="tel" name="Phone Number">
+
+  <label>Discord Username</label>
+
+  <input type="text" name="Discord Username">
+
+  <label>Country of Residence</label>
+
+  <input type="text" name="Country of Residence" required>
+
+  <label>Reason for Application</label>
 
   <textarea name="Reason for Application" required></textarea>
-  <div class="checkbox">
-    <input type="checkbox" required>
-    I have read the Constitution of the Republic of Southcliff.
-  </div>
-  <div class="checkbox">
-    <input type="checkbox" required>
-    I pledge to uphold the Constitution and laws of the Republic of Southcliff.
-  </div>
 
-Submit Application
+  <label>
+
+    <input type="checkbox" required>
+
+    I have read the Constitution of the Republic of Southcliff
+
+  </label>
+
+  <label>
+
+    <input type="checkbox" required>
+
+    I pledge to uphold the laws and Constitution of Southcliff
+
+  </label>
+
+  <button type="submit">Submit Application</button>
 
 </form>
+
 <div class="privacy">
-  <strong>Privacy Notice</strong><br>
-  Information submitted through this form is used solely for reviewing citizenship applications to the Republic of Southcliff. Personal information will not be shared, sold, or distributed to third parties and is accessible only to authorised administrators of the Republic of Southcliff.
+
+  <strong>Privacy Notice:</strong><br>
+
+  Information submitted is used only for reviewing citizenship applications for the Republic of Southcliff. Data is not sold, shared, or distributed and is only accessible to authorised administrators.
+
 </div>
+
 </main>
+
 <footer>
+
   © Republic of Southcliff. All rights reserved.
+
 </footer>
+
 </body>
+
 </html>
