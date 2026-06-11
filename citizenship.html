@@ -4,7 +4,7 @@
 
 <head>
 
-  <title>Citizenship Application - Republic of Southcliff</title>
+  <title>Citizenship - Republic of Southcliff</title>
 
   <style>
 
@@ -17,8 +17,6 @@
       background: #ffffff;
 
       color: #0b0c0c;
-
-      line-height: 1.6;
 
     }
 
@@ -36,9 +34,11 @@
 
     }
 
-    .logo img {
+    .logo img,
 
-      height: 80px;
+    .flag img {
+
+      height: 90px;
 
       width: auto;
 
@@ -46,9 +46,9 @@
 
     .title {
 
-      font-size: 28px;
+      font-size: 36px;
 
-      font-weight: bold;
+      font-weight: 900;
 
       color: #0C4491;
 
@@ -58,25 +58,35 @@
 
     }
 
-    .flag img {
+    nav {
 
-      height: 100px;
+      padding: 12px 22px;
 
-      width: auto;
+      border-bottom: 1px solid #e0e0e0;
 
-      border: 2px solid #EBAF24;
+    }
 
-      padding: 2px;
+    nav a {
 
-      border-radius: 4px;
+      margin-right: 16px;
 
-      background: #fff;
+      color: #0C4491;
+
+      text-decoration: none;
+
+      font-weight: 600;
+
+    }
+
+    nav a:hover {
+
+      color: #EBAF24;
 
     }
 
     main {
 
-      max-width: 800px;
+      max-width: 900px;
 
       margin: 40px auto;
 
@@ -84,9 +94,15 @@
 
     }
 
-    h1 {
+    .card {
 
-      color: #0C4491;
+      background: #f3f2f1;
+
+      border-left: 4px solid #EBAF24;
+
+      padding: 20px;
+
+      margin-top: 20px;
 
     }
 
@@ -94,9 +110,11 @@
 
       display: block;
 
-      margin-top: 15px;
+      margin-top: 12px;
 
       font-weight: bold;
+
+      color: #0C4491;
 
     }
 
@@ -106,29 +124,21 @@
 
       padding: 10px;
 
-      margin-top: 5px;
+      margin-top: 6px;
 
       border: 1px solid #ccc;
 
-      border-radius: 4px;
+      border-radius: 6px;
 
-      box-sizing: border-box;
-
-    }
-
-    textarea {
-
-      height: 120px;
-
-      resize: vertical;
+      font-family: Arial, sans-serif;
 
     }
 
     button {
 
-      margin-top: 20px;
+      margin-top: 15px;
 
-      padding: 12px 24px;
+      padding: 10px 14px;
 
       background: #0C4491;
 
@@ -136,31 +146,29 @@
 
       border: none;
 
-      border-radius: 4px;
+      border-radius: 6px;
 
       cursor: pointer;
 
-      font-size: 16px;
+      font-weight: bold;
 
     }
 
     button:hover {
 
-      background: #08326d;
+      background: #EBAF24;
+
+      color: #0b0c0c;
 
     }
 
-    .privacy {
+    .note {
 
-      margin-top: 30px;
+      font-size: 13px;
 
-      padding: 15px;
+      color: #555;
 
-      background: #f3f2f1;
-
-      border-left: 4px solid #EBAF24;
-
-      font-size: 14px;
+      margin-top: 10px;
 
     }
 
@@ -198,7 +206,7 @@
 
   </div>
 
-  <div class="title">Republic of Southcliff</div>
+  <div class="title">Citizenship Application</div>
 
   <div class="flag">
 
@@ -208,67 +216,53 @@
 
 </header>
 
+<nav>
+
+  <a href="index.html">Home</a>
+
+  <a href="government.html">Government</a>
+
+  <a href="constitution.html">Constitution</a>
+
+  <a href="announcements.html">Announcements</a>
+
+  <a href="anthem.html">National Anthem</a>
+
+</nav>
+
 <main>
 
-<h1>Citizenship Application</h1>
+<h1>Apply for Citizenship</h1>
 
-<p>Complete the form below to apply for citizenship of the Republic of Southcliff.</p>
+<div class="card">
 
-<form action="https://formspree.io/f/xvznbzky" method="POST">
+  <form action="https://formspree.io/f/xvznbzky" method="POST">
 
-  <label>Full Name</label>
+    <label>Full Name</label>
 
-  <input type="text" name="Full Name" required>
+    <input type="text" name="name" required>
 
-  <label>Date of Birth</label>
+    <label>Email</label>
 
-  <input type="date" name="Date of Birth" required>
+    <input type="email" name="email" required>
 
-  <label>Email Address</label>
+    <label>Why do you want to become a Southcliffian?</label>
 
-  <input type="email" name="Email Address" required>
+    <textarea name="reason" rows="4" required></textarea>
 
-  <label>Phone Number</label>
+    <label>Upload Photo for Digital Passport</label>
 
-  <input type="tel" name="Phone Number">
+    <input type="file" name="passport_photo" accept="image/*">
 
-  <label>Discord Username</label>
+    <div class="note">
 
-  <input type="text" name="Discord Username">
+      This photo may be used to generate your Southcliff digital passport if your application is approved.
 
-  <label>Country of Residence</label>
+    </div>
 
-  <input type="text" name="Country of Residence" required>
+    <button type="submit">Submit Application</button>
 
-  <label>Reason for Application</label>
-
-  <textarea name="Reason for Application" required></textarea>
-
-  <label>
-
-    <input type="checkbox" required>
-
-    I have read the Constitution of the Republic of Southcliff
-
-  </label>
-
-  <label>
-
-    <input type="checkbox" required>
-
-    I pledge to uphold the laws and Constitution of Southcliff
-
-  </label>
-
-  <button type="submit">Submit Application</button>
-
-</form>
-
-<div class="privacy">
-
-  <strong>Privacy Notice:</strong><br>
-
-  Information submitted is used only for reviewing citizenship applications for the Republic of Southcliff. Data is not sold, shared, or distributed and is only accessible to authorised administrators.
+  </form>
 
 </div>
 
