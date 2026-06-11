@@ -18,6 +18,16 @@
 
       color: #0b0c0c;
 
+      transition: background 0.3s, color 0.3s;
+
+    }
+
+    body.dark {
+
+      background: #0b0c0c;
+
+      color: #ffffff;
+
     }
 
     header {
@@ -31,6 +41,12 @@
       padding: 16px 22px;
 
       border-bottom: 4px solid #0C4491;
+
+    }
+
+    body.dark header {
+
+      border-bottom: 4px solid #1e5bd7;
 
     }
 
@@ -72,6 +88,12 @@
 
     }
 
+    body.dark .title {
+
+      color: #7fb2ff;
+
+    }
+
     nav {
 
       padding: 12px 22px;
@@ -86,6 +108,12 @@
 
     }
 
+    body.dark nav {
+
+      border-bottom: 1px solid #333;
+
+    }
+
     nav a {
 
       color: #0C4491;
@@ -93,6 +121,12 @@
       text-decoration: none;
 
       font-weight: 600;
+
+    }
+
+    body.dark nav a {
+
+      color: #7fb2ff;
 
     }
 
@@ -112,12 +146,6 @@
 
     }
 
-    h1 {
-
-      color: #0C4491;
-
-    }
-
     .panel {
 
       margin-top: 20px;
@@ -127,6 +155,14 @@
       border-left: 4px solid #EBAF24;
 
       background: #f3f2f1;
+
+      transition: background 0.3s;
+
+    }
+
+    body.dark .panel {
+
+      background: #1a1a1a;
 
     }
 
@@ -140,11 +176,9 @@
 
     }
 
-    .panel a:hover {
+    body.dark .panel a {
 
-      color: #EBAF24;
-
-      text-decoration: underline;
+      color: #7fb2ff;
 
     }
 
@@ -164,11 +198,51 @@
 
     }
 
+    body.dark footer {
+
+      border-top: 1px solid #333;
+
+      color: #aaa;
+
+    }
+
+    .toggle {
+
+      position: fixed;
+
+      top: 12px;
+
+      right: 12px;
+
+      padding: 10px 14px;
+
+      background: #0C4491;
+
+      color: white;
+
+      border: none;
+
+      cursor: pointer;
+
+      border-radius: 6px;
+
+      font-weight: bold;
+
+    }
+
+    body.dark .toggle {
+
+      background: #1e5bd7;
+
+    }
+
   </style>
 
 </head>
 
 <body>
+
+<button class="toggle" onclick="toggleDark()">Dark Mode</button>
 
 <header>
 
@@ -259,6 +333,16 @@
   © Republic of Southcliff. All rights reserved.
 
 </footer>
+
+<script>
+
+  function toggleDark() {
+
+    document.body.classList.toggle("dark");
+
+  }
+
+</script>
 
 </body>
 
