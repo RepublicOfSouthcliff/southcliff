@@ -102,8 +102,6 @@
 
       padding: 20px;
 
-      margin-top: 20px;
-
     }
 
     label {
@@ -159,16 +157,6 @@
       background: #EBAF24;
 
       color: #0b0c0c;
-
-    }
-
-    .note {
-
-      font-size: 13px;
-
-      color: #555;
-
-      margin-top: 10px;
 
     }
 
@@ -242,23 +230,25 @@
 
     <input type="text" name="name" required>
 
+    <label>Date of Birth</label>
+
+    <input type="date" name="dob" required>
+
+    <label>Country of Residence</label>
+
+    <input type="text" name="country" required>
+
+    <label>Reason for Joining Southcliff</label>
+
+    <textarea name="reason" rows="4" required></textarea>
+
     <label>Email</label>
 
     <input type="email" name="email" required>
 
-    <label>Why do you want to become a Southcliffian?</label>
-
-    <textarea name="reason" rows="4" required></textarea>
-
     <label>Upload Photo for Digital Passport</label>
 
     <input type="file" name="passport_photo" accept="image/*">
-
-    <div class="note">
-
-      This photo may be used to generate your Southcliff digital passport if your application is approved.
-
-    </div>
 
     <button type="submit">Submit Application</button>
 
