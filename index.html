@@ -32,11 +32,11 @@
 
     header {
 
-      display: flex;
+      display: grid;
+
+      grid-template-columns: 120px 1fr 120px;
 
       align-items: center;
-
-      justify-content: space-between;
 
       padding: 16px 22px;
 
@@ -60,6 +60,28 @@
 
     }
 
+    .logo {
+
+      display: flex;
+
+      justify-content: flex-start;
+
+    }
+
+    .flag {
+
+      display: flex;
+
+      justify-content: flex-end;
+
+    }
+
+    .title-wrap {
+
+      text-align: center;
+
+    }
+
     .title {
 
       font-size: 48px;
@@ -67,10 +89,6 @@
       font-weight: 900;
 
       color: #0C4491;
-
-      text-align: center;
-
-      flex: 1;
 
       letter-spacing: 2px;
 
@@ -84,17 +102,11 @@
 
     }
 
-    /* Toggle in header */
-
     .theme-toggle {
 
-      display: flex;
+      margin-top: 8px;
 
-      align-items: center;
-
-      justify-content: center;
-
-      margin-right: 12px;
+      display: inline-block;
 
     }
 
@@ -252,15 +264,19 @@
 
   </div>
 
-  <div class="title">
+  <div class="title-wrap">
 
-    Republic of Southcliff
+    <div class="title">
 
-  </div>
+      Republic of Southcliff
 
-  <div class="theme-toggle">
+    </div>
 
-    <button onclick="toggleTheme()" id="themeBtn">Dark</button>
+    <div class="theme-toggle">
+
+      <button onclick="toggleTheme()" id="themeBtn">Dark</button>
+
+    </div>
 
   </div>
 
