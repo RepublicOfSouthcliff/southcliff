@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 
 <html>
 
@@ -42,6 +42,8 @@
 
       border-bottom: 4px solid #0C4491;
 
+      column-gap: 10px;
+
     }
 
     body.dark header {
@@ -80,11 +82,13 @@
 
       text-align: center;
 
+      min-width: 0;
+
     }
 
     .title {
 
-      font-size: 48px;
+      font-size: clamp(28px, 4vw, 48px);
 
       font-weight: 900;
 
@@ -93,6 +97,14 @@
       letter-spacing: 2px;
 
       text-transform: uppercase;
+
+      /* prevents overflow into flag */
+
+      white-space: nowrap;
+
+      overflow: hidden;
+
+      text-overflow: ellipsis;
 
     }
 
