@@ -130,6 +130,8 @@
 
       font-family: Arial, sans-serif;
 
+      box-sizing: border-box;
+
     }
 
     button {
@@ -157,6 +159,16 @@
       background: #EBAF24;
 
       color: #0b0c0c;
+
+    }
+
+    .note {
+
+      margin-top: 8px;
+
+      font-size: 13px;
+
+      color: #555;
 
     }
 
@@ -224,7 +236,11 @@
 
 <div class="card">
 
-  <form action="https://formspree.io/f/xvznbzky" method="POST">
+  <form action="https://formspree.io/f/xvznbzky"
+
+        method="POST"
+
+        enctype="multipart/form-data">
 
     <label>Full Name</label>
 
@@ -238,17 +254,23 @@
 
     <input type="text" name="country" required>
 
+    <label>Email Address</label>
+
+    <input type="email" name="email" required>
+
     <label>Reason for Joining Southcliff</label>
 
     <textarea name="reason" rows="4" required></textarea>
 
-    <label>Email</label>
-
-    <input type="email" name="email" required>
-
-    <label>Upload Photo for Digital Passport</label>
+    <label>Passport Photograph</label>
 
     <input type="file" name="passport_photo" accept="image/*">
+
+    <div class="note">
+
+      The uploaded photograph must comply with standard UK passport photo requirements and measurements. Applications may be delayed or rejected if the photograph does not meet these standards.
+
+    </div>
 
     <button type="submit">Submit Application</button>
 
