@@ -1,243 +1,289 @@
 <!DOCTYPE html>
+
 <html>
+
 <head>
-  <title>Government - Republic of Southcliff</title>
+
+  <title>Citizenship - Republic of Southcliff</title>
 
   <style>
+
     body {
+
       margin: 0;
+
       font-family: Arial, sans-serif;
+
       background: #ffffff;
+
       color: #0b0c0c;
+
     }
 
     header {
+
       display: flex;
+
       align-items: center;
+
       justify-content: space-between;
+
       padding: 16px 22px;
+
       border-bottom: 4px solid #0C4491;
+
     }
 
     .logo img,
+
     .flag img {
+
       height: 90px;
+
       width: auto;
+
     }
 
     .title {
+
       font-size: 36px;
+
       font-weight: 900;
+
       color: #0C4491;
+
       text-align: center;
+
       flex: 1;
+
     }
 
     nav {
+
       padding: 12px 22px;
+
       border-bottom: 1px solid #e0e0e0;
+
     }
 
     nav a {
+
       margin-right: 16px;
+
       color: #0C4491;
+
       text-decoration: none;
+
       font-weight: 600;
+
     }
 
     nav a:hover {
+
       color: #EBAF24;
+
     }
 
     main {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
 
-    h1 {
-      color: #0C4491;
+      max-width: 900px;
+
+      margin: 40px auto;
+
+      padding: 0 20px;
+
     }
 
     .card {
+
       background: #f3f2f1;
+
       border-left: 4px solid #EBAF24;
+
       padding: 20px;
-      margin-top: 20px;
+
     }
 
-    .person {
-      display: flex;
-      gap: 20px;
-      align-items: flex-start;
+    label {
+
+      display: block;
+
+      margin-top: 12px;
+
+      font-weight: bold;
+
+      color: #0C4491;
+
     }
 
-    .person img {
-      width: 140px;
-      height: auto;
+    input, textarea {
+
+      width: 100%;
+
+      padding: 10px;
+
+      margin-top: 6px;
+
+      border: 1px solid #ccc;
+
       border-radius: 6px;
-      border: 2px solid #0C4491;
-      user-select: none;
-      -webkit-user-drag: none;
-      pointer-events: none;
+
+      font-family: Arial, sans-serif;
+
+      box-sizing: border-box;
+
     }
 
-    .role {
-      font-size: 14px;
-      color: #666;
+    button {
+
+      margin-top: 15px;
+
+      padding: 10px 14px;
+
+      background: #0C4491;
+
+      color: white;
+
+      border: none;
+
+      border-radius: 6px;
+
+      cursor: pointer;
+
       font-weight: bold;
-      text-transform: uppercase;
+
     }
 
-    .name {
-      font-size: 22px;
-      font-weight: 900;
-      color: #0C4491;
-      margin-top: 4px;
+    button:hover {
+
+      background: #EBAF24;
+
+      color: #0b0c0c;
+
     }
 
-    .contact {
-      margin-top: 40px;
-      padding: 20px;
-      background: #eef2ff;
-      border-left: 4px solid #0C4491;
-    }
+    .note {
 
-    .contact h3 {
-      margin-top: 0;
-      color: #0C4491;
-    }
+      margin-top: 8px;
 
-    .contact a {
-      color: #0C4491;
-      font-weight: bold;
-      text-decoration: none;
-    }
+      font-size: 13px;
 
-    .contact a:hover {
-      color: #EBAF24;
+      color: #555;
+
     }
 
     footer {
+
       margin-top: 60px;
+
       padding: 20px;
+
       border-top: 1px solid #e0e0e0;
+
       text-align: center;
+
       font-size: 13px;
+
       color: #0C4491;
+
     }
+
   </style>
+
 </head>
 
-<body oncontextmenu="return false;">
+<body>
 
 <header>
 
   <div class="logo">
+
     <a href="index.html">
+
       <img src="coat-of-arms.png" alt="Coat of Arms">
+
     </a>
+
   </div>
 
-  <div class="title">Government of Southcliff</div>
+  <div class="title">Citizenship Application</div>
 
   <div class="flag">
+
     <img src="flag.png" alt="Flag of Southcliff">
+
   </div>
 
 </header>
 
 <nav>
+
   <a href="index.html">Home</a>
+
+  <a href="government.html">Government</a>
+
   <a href="constitution.html">Constitution</a>
-  <a href="citizenship.html">Citizenship</a>
+
   <a href="announcements.html">Announcements</a>
+
   <a href="anthem.html">National Anthem</a>
+
 </nav>
 
 <main>
 
-<h1>Government Structure</h1>
+<h1>Apply for Citizenship</h1>
 
 <div class="card">
 
-  <div class="person">
+  <form action="https://formspree.io/f/xvznbzky"
 
-    <img src="cj-tribe.png" alt="CJ Tribe">
+        method="POST">
 
-    <div>
-      <div class="role">Prime Minister</div>
-      <div class="name">CJ Tribe</div>
-      <p>
-        Founder and Head of Government of the Republic of Southcliff.
-        Responsible for the administration, development and representation
-        of the Republic.
-      </p>
+    <label>Full Name</label>
+
+    <input type="text" name="name" required>
+
+    <label>Date of Birth</label>
+
+    <input type="date" name="dob" required>
+
+    <label>Country of Residence</label>
+
+    <input type="text" name="country" required>
+
+    <label>Email Address</label>
+
+    <input type="email" name="email" required>
+
+    <label>Reason for Joining Southcliff</label>
+
+    <textarea name="reason" rows="4" required></textarea>
+
+    <div class="note">
+
+      For your digital passport, please email a passport-style photograph to
+
+      <a href="mailto:Southcliff.contact@gmail.com">Southcliff.contact@gmail.com</a>.
+
+      Please make sure to include your full name in the email subject line.
+
     </div>
 
-  </div>
+    <button type="submit">Submit Application</button>
 
-</div>
-
-<div class="card">
-
-  <div class="person">
-
-    <img src="rachael-tribe.png" alt="Rachael Tribe">
-
-    <div>
-      <div class="role">Minister of State for Brighton and Westcliff Affairs (Ceremonial)</div>
-      <div class="name">Rachael Tribe</div>
-      <p>
-        Ceremonial government official representing the Brighton Offices
-        of the Republic, including the State of Southcliff and the State
-        of Westcliff.
-      </p>
-    </div>
-
-  </div>
-
-</div>
-
-<div class="card">
-
-  <h2>Administrative Structure</h2>
-
-  <p><strong>State of Southcliff</strong><br>
-  Founding and capital state of the Republic.</p>
-
-  <p><strong>State of Westcliff</strong><br>
-  Constituent state forming part of the Brighton Offices.</p>
-
-  <p><strong>State of Northcliff</strong><br>
-  Constituent state serving as the East Sussex Office of the Republic.</p>
-
-</div>
-
-<div class="contact">
-
-  <h3>Contact the Government</h3>
-
-  <p>
-    For official enquiries, citizenship matters, diplomatic communications,
-    or feedback regarding the Republic of Southcliff, please use the
-    official contact channels.
-  </p>
-
-  <p>
-    <strong>Email:</strong>
-    <a href="mailto:southcliff.contact@gmail.com">
-      southcliff.contact@gmail.com
-    </a>
-  </p>
+  </form>
 
 </div>
 
 </main>
 
 <footer>
+
   © Republic of Southcliff. All rights reserved.
+
 </footer>
 
 </body>
+
 </html>
